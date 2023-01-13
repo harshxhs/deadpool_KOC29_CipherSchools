@@ -6,5 +6,7 @@ def days_lived(birth_date):
     birth_date = datetime.strptime(birth_date, "%Y-%m-%d").date()
     return (today - birth_date).days
 
+
+# Enter your birthdate in YYYY-MM-DD format:
 birth_date = input("Enter your birthdate in YYYY-MM-DD format: ")
 print("You have lived for ", days_lived(birth_date), " days.")
