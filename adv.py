@@ -1,9 +1,9 @@
-from datetime import date, datetime # import date and datetime modules from datetime library
+from datetime import date, datetime
 
 def days_lived(birth_date):
-    today = date.today() # get current date
-    birth_date = datetime.strptime(birth_date, "%Y-%m-%d").date() # convert string birthdate to date object
-    return (today - birth_date).days # subtract birthdate from current date and return the difference in days
+    today = date.today()
+    birth_date = datetime.strptime(birth_date, "%Y-%m-%d").date()
+    return (today - birth_date).days
 
-birth_date = input("Enter your birthdate in YYYY-MM-DD format: ") # prompt user to enter birthdate
-print("You have lived for ", days_lived(birth_date), " days.") # call days_lived function and print the result
+birth_date = input("Enter your birthdate in YYYY-MM-DD format: ")
+print("You have lived for ", days_lived(birth_date), " days.")
